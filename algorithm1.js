@@ -13,7 +13,7 @@ function diffArray(arr1,arr2){
         }
     }
     console.log(union)
-    
+
 }
 
-diffArray([1,2,3,5],[1,2,3,4,5]);
+diffArray([1,2,3,5,6],[1,2,3,4,5]);

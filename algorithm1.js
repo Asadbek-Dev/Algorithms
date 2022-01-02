@@ -12,8 +12,17 @@ function diffArray(arr1,arr2){
             union.push(arr2[i])
         }
     }
-    console.log(union)
+    const symmDiff=[];
+    for(let i=0;i<union.length;i++){
+        const currentEl=union[i];
+        if(arr1.includes(currentEl) && !arr2.includes(currentEl)){
+            symmDiff.push(currentEl);
+        } else if(arr2.includes(currentEl) && !arr1.includes(currentEl)){
+            symmDiff.push(currentEl);
+        }
+    }
+    return symmDiff;
 
 }
 
-diffArray([1,2,3,5,6],[1,2,3,4,5]);
+diffArray([1,2,3,5],[1,2,3,4,5]);

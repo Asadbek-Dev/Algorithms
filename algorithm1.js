@@ -7,6 +7,7 @@ function diffArray(arr1,arr2){
             union.push(arr1[i])
         }
     }
+    
     for(let i=0;i<arr2.length;i++){
         if(!union.includes(arr2[i])){
             union.push(arr2[i])

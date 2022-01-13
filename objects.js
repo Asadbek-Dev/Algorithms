@@ -90,7 +90,7 @@ var facebookProfile = {
     addFriend: function addNew(){
         facebookProfile.friends+=1;
     },
-    removeFriend: function eraseFriend(){ //Note: simple facebookProfile.friends-- will not be accepted
+    removeFriend: function eraseFriend(){ 
         var tmp;
         tmp=facebookProfile.friends;
         tmp--;
